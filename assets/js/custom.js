@@ -17,7 +17,7 @@
         });
     });
     /* Backstretch */
-    $.backstretch('assets/images/background/home.png');
+    $.backstretch('assets/images/background/bg.png');
     /* Animation Backstretch On Page Load */
     $(window).scrollTop() > $(window).height() ? $(".backstretch").fadeOut("slow") : $(".backstretch").fadeIn("slow");
     /* Animation Navbar On Page Load */

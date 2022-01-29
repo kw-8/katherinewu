@@ -451,7 +451,7 @@ section {
     margin-top: 30px;
     position: relative
 }
-.work .item img {
+.work .item img, .work .item video {
     width: 100%
 }
 .work .work-caption {

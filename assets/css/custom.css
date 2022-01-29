@@ -780,3 +780,10 @@ extra
 i {
   font-size: 60px;
 }
+.project-icons a {
+  font-size: 40px;
+}
+.project-icons img {
+  height: 1em;
+  width: 1em;
+}

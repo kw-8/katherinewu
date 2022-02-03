@@ -778,6 +778,10 @@ extra
   width: 100%;
   color: white;
 }
+.container-inner {
+  width: max-content;
+  margin: auto;
+}
 .education .container ul {
   list-style: none;
   position: relative;
@@ -807,6 +811,7 @@ extra
 @media (max-width: 767px) {
   /* EXTRA: skills, education sections */
   .education .container {padding: 20px;}
+  .container-inner {width: 100%;}
   .contact .container {padding: 0;}
   .skills-container {font-size: 50px;}
   .skills-container i {margin: 10px;}

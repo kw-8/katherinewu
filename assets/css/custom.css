@@ -787,3 +787,23 @@ i {
   height: 1em;
   width: 1em;
 }
+
+
+
+/* carousel */
+.carousel { height: calc(80vh - 5em);}
+.carousel-cell {
+  width: 100%;
+  height: calc(80vh - 5em);
+  background-color: #3498db;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel-cell > .lead { margin: 0; }
+.carousel-cell > * { margin: 10px; }
+.carousel-cell h2 a { color: white; }
+.carousel-cell img { height: 60%; }
+.flickity-page-dots li.dot {background: white;}

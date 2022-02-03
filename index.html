@@ -17,20 +17,9 @@
     <link rel="stylesheet" href="assets/css/lightbox.min.css"/>
     <link rel="stylesheet" href="assets/css/custom.css"/>
 
-    <!-- Required meta tags for bootstrap -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- flickity setup -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- icons for skills -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
@@ -170,154 +159,24 @@
     <section id="work" class="work">
       <div class="container">
         <h2 class="section-title text-center wow zoomIn" data-wow-duration="1s">Portfolio</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p>BLAH BLAH BLAH</p>
-              <img class="d-block w-100" src="..." alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <p>BLAH BLAH BLAH x2</p>
-              <img class="d-block w-100" src="..." alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <p>BLAH BLAH BLAH x3</p>
-              <img class="d-block w-100" src="..." alt="Third slide">
-            </div>
+        <div class="carousel" data-flickity='{ "wrapAround": true }'>
+          <div class="carousel-cell">
+            <h2 class="lead text-center wow zoomIn" data-wow-duration="1.5s">
+              <a target="_blank" href="https://insta-gran.herokuapp.com/">Instagran</a>
+            </h2>
+            <img src="assets/images/portfolio/ss_ig_explore.png" alt="">
+            <p>here is  a descripiton of what instagrna is blah blah adsjkhfhaklsdf ahsjkdfha ahdksfaskdhf balh ablha blah
+            </p>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <!-- <p class="lead text-center wow zoomIn" data-wow-duration="1.5s">Here are some recent projects I have been working on</p> -->
-        <div class="row project-icons">
-          <div class="filters col-md-12">
-            <ul>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2">
-                <a target="_blank" href="https://insta-gran.herokuapp.com/"><img
-                    src="https://github.com/kw-8/instagran/blob/master/app/assets/images/instagran_icon.png?raw=true"
-                    alt="Instagran"></a>
-              </li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3">
-                <a target="_blank" href="https://nextglass.herokuapp.com/">🥂
-              </li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4">
-                <a target="_blank" href="https://kw-8.github.io/bubblepedia/"><img src="https://github.com/kw-8/bubblepedia/blob/main/assets/bubble-tea.png?raw=true"
-                    alt="Bubblepedia"></a>
-              </li>
-            </ul>
+          <div class="carousel-cell">
+            <h2 class="lead text-center wow zoomIn" data-wow-duration="1.5s">
+              <a target="_blank" href="https://nextglass.herokuapp.com/">NextGlass</a>
+            </h2>
           </div>
-        </div>
-        <div class="row">
-          <div class="filters col-md-12">
-            <ul id="filters">
-              <li class="active wow zoomIn" data-wow-duration="1s" data-wow-delay="0.1" data-filter="*">All</li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2" data-filter=".instagran">Instagran</li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3" data-filter=".nextglass">NextGlass</li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4" data-filter=".bubblepedia">Bubblepedia</li>
-              <!-- <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4" data-filter=".typography">Typography</li>
-              <li class="wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5" data-filter=".web">Web Design</li> -->
-            </ul>
-          </div>
-        </div>
-      
-        <div class="work-inner">
-          <div class="row work-posts grid">
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 instagran item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.1">
-              <img src="assets/images/portfolio/ss_ig_profile.png" alt="">
-              <a href="assets/images/portfolio/ss_ig_profile.png" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 instagran item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.2">
-              <img src="assets/images/portfolio/ss_ig_explore.png" alt="">
-              <a href="assets/images/portfolio/ss_ig_explore.png" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <!-- <div class="col-md-4 col-sm-4 instagran item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.3">
-              <img src="assets/images/portfolio/3.jpg" alt="">
-              <a href="assets/images/portfolio/3.jpg" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div> -->
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 nextglass item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.4">
-              <img src="assets/images/portfolio/ss_ng_splash.png" alt="">
-              <a href="assets/images/portfolio/ss_ng_splash.png" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 nextglass item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.5">
-              <video autoplay loop src="assets/images/portfolio/ss_ng_home.mov" alt="">
-              <a href="assets/images/portfolio/ss_ng_home.mov" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 nextglass item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.6">
-              <video autoplay loop src="assets/images/portfolio/ss_ng_tag.mov" alt="">
-              <a href="assets/images/portfolio/ss_ng_tag.mov" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 bubblepedia item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.7">
-              <img src="assets/images/portfolio/ss_bubblepedia.png" alt="">
-              <a href="assets/images/portfolio/ss_bubblepedia.png" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 bubblepedia item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.8">
-              <img src="assets/images/portfolio/ss_bubblepedia_bubbles.jpg" alt="">
-              <a href="assets/images/portfolio/ss_bubblepedia_bubbles.jpg" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- end:single portfolio -->
-            <!-- begin:single portfolio -->
-            <div class="col-md-4 col-sm-4 bubblepedia item wow zoomIn" data-wow-duration="1s" data-wow-delay="0.9">
-              <img src="assets/images/portfolio/ss_bubblepedia_mobile.jpg" alt="">
-              <a href="assets/images/portfolio/ss_bubblepedia_mobile.jpg" data-lightbox="roadtrip">
-                <div class="work-caption">
-                  <h4>View</h4>
-                </div>
-              </a>
-            </div>
-            <!-- begin:single portfolio -->
+          <div class="carousel-cell">
+            <h2 class="lead text-center wow zoomIn" data-wow-duration="1.5s">
+              <a target="_blank" href="https://kw-8.github.io/bubblepedia/">Bubblepedia</a>
+            </h2>
           </div>
         </div>
       </div>

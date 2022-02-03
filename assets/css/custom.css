@@ -767,15 +767,17 @@ extra
 .italic {
   font-style: italic;
 }
-.contact {
+.contact, .education {
   padding: 0;
 }
-.contact .container {
-  background-color: rgba(213, 217, 236, 0.85);
+.contact .container, .education .container {
+  background-color: rgba(81, 99, 110, 0.8);
   padding-top: 81px;
   padding-bottom: 81px;
   margin: 0;
+  height: 100%;
   width: 100%;
+  color: white;
 }
 .skills-container {
   display: flex;

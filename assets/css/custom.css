@@ -772,12 +772,28 @@ extra
 }
 .contact .container, .education .container {
   background-color: rgba(81, 99, 110, 0.8);
-  padding-top: 81px;
-  padding-bottom: 81px;
+  padding: 81px;
   margin: 0;
   height: 100%;
   width: 100%;
   color: white;
+}
+.education .container ul {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  border-left: 2px solid white;
+}
+.education .container li:nth-child(2n+1) { font-weight: 700; }
+.education .container li:nth-child(2n) {
+  font-style: italic;
+  padding-left: 10px;
+}
+.education .container li span {
+  position: absolute;
+  right: 0;
 }
 .skills-container {
   display: flex;

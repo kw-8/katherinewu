@@ -804,6 +804,13 @@ extra
 .skills-container i {
   margin: 20px;
 }
+@media (max-width: 767px) {
+  /* EXTRA: skills, education sections */
+  .education .container {padding: 20px;}
+  .contact .container {padding: 0;}
+  .skills-container {font-size: 50px;}
+  .skills-container i {margin: 10px;}
+}
 
 
 
